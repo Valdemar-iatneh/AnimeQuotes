@@ -4,6 +4,7 @@ namespace AnimeQuotes
 {
     public partial class Form
     {
+
         [JsonProperty("anime")]
         public string Anime { get; set; }
     

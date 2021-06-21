@@ -12,5 +12,6 @@ namespace AnimeQuotesBot
     
         [JsonProperty("quote")]
         public string Quote { get; set; }
+
     }
 }

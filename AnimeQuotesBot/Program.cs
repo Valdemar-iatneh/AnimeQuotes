@@ -37,7 +37,7 @@ namespace AnimeQuotesBot
                     {
                         string result = streamReader.ReadToEnd();
                         Console.WriteLine(result);
-                        bot.SendTextMessageAsync(arg.Message.Chat.Id, $"You say: {result}");
+                        bot.SendTextMessageAsync(arg.Message.Chat.Id, $"Все доступные аниме: {result}");
                     }
                     
                     return;
