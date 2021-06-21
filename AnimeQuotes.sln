@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimeQuotes", "AnimeQuotes\AnimeQuotes.csproj", "{AE872AC4-CC1B-4EF9-B782-60FEF1B01613}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimeQuotesBot", "AnimeQuotesBot\AnimeQuotesBot.csproj", "{BB4883E3-A367-4506-AB1D-EA44FF6539B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AE872AC4-CC1B-4EF9-B782-60FEF1B01613}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE872AC4-CC1B-4EF9-B782-60FEF1B01613}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE872AC4-CC1B-4EF9-B782-60FEF1B01613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB4883E3-A367-4506-AB1D-EA44FF6539B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB4883E3-A367-4506-AB1D-EA44FF6539B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB4883E3-A367-4506-AB1D-EA44FF6539B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB4883E3-A367-4506-AB1D-EA44FF6539B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
