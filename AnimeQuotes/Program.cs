@@ -11,11 +11,9 @@ namespace AnimeQuotes
     {
         static void Main(string[] args)
         {
-            string Word = Console.ReadLine();
-            var url = $"https://animechan.vercel.app/api/quotes/anime?title={Word.ToLower()}";
-            //https://animechan.vercel.app/api/random
-            //https://animechan.vercel.app/api/available/anime
-            //}
+            string anime_name = Console.ReadLine();
+            var url = $"https://animechan.vercel.app/api/quotes/anime?title={anime_name.ToLower()}";
+
             var request = WebRequest.Create(url);
 
             var response = request.GetResponse();
@@ -32,25 +30,15 @@ namespace AnimeQuotes
                 string result = streamReader.ReadToEnd();
                 //Console.WriteLine(result);
                 var animeQuote = JsonConvert.DeserializeObject<List<Form>>(result);
-                //Console.WriteLine($"Anime:      {Word}");  <Dictionary<string, Data>>(source);
-                //Console.WriteLine($"Character:  {animeQuote.Character}");
-                //Console.WriteLine($"Quote:      {animeQuote.Quote}");
-
-                //var name = animeQuote.List[0].name;
 
                 foreach (var data in animeQuote)
                 {
-                    Console.WriteLine($"Anime:      {Word}");
+                    Console.WriteLine($"Anime:      {anime_name}");
                     Console.WriteLine($"Character:  {data.Character}");
                     Console.WriteLine($"Quote:      {data.Quote}");
                     Console.WriteLine();
                 }
-
             }
-            //Darker than Black
-            //Beck
         }
-
-
     }
 }
